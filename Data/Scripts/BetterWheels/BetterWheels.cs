@@ -42,6 +42,12 @@ namespace BetterWheels
                     componenet.AxleFriction += 3f;
                     MyLog.Default.WriteLine("Usefull Big Wheels - Improved " + componenet.BlockPairName);
                 }
+                else if (componenet.BlockPairName.Contains("2x2"))
+                {
+                    componenet.PropulsionForce *= 2.0f;
+                    componenet.AxleFriction += 1.75f;
+                    MyLog.Default.WriteLine("Usefull Big Wheels - Improved " + componenet.BlockPairName);
+                }
             }
         }
     }
